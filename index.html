@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>entrega oficial de buquê</title>
+
+<link href="https://fonts.googleapis.com/css2?family=playfair+display:wght@700&family=inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+background:#ffffff;
+font-family:'inter',sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+color:#111;
+}
+
+.card{
+max-width:750px;
+padding:80px 60px;
+text-align:center;
+}
+
+h1{
+font-family:'playfair display',serif;
+font-size:2.8rem;
+margin-bottom:20px;
+}
+
+.subtitle{
+color:#666;
+margin-bottom:40px;
+line-height:1.6;
+}
+
+button{
+background:#000;
+color:#fff;
+border:none;
+padding:14px 32px;
+border-radius:40px;
+cursor:pointer;
+font-size:0.9rem;
+margin:8px;
+transition:0.3s;
+}
+
+button:hover{opacity:0.8;}
+
+.hidden{
+display:none;
+margin-top:40px;
+animation:fade 0.8s ease forwards;
+}
+
+.message{
+line-height:1.9;
+margin-bottom:30px;
+font-size:1.05rem;
+}
+
+.buque{
+font-size:60px;
+margin:20px 0;
+}
+
+.quiz{
+margin-top:30px;
+}
+
+.footer{
+margin-top:60px;
+font-size:0.8rem;
+color:#bbb;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(10px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>entrega oficial de buquê 🌹</h1>
+
+<div class="subtitle">
+atenção: este é um site levemente dramático, potencialmente carente e 100% sincero.
+</div>
+
+<button onclick="abrir()">aceitar o buquê virtual</button>
+
+<div class="hidden" id="conteudo">
+
+<div class="buque">💐</div>
+
+<div class="message">
+primeiramente: saudades.<br><br>
+segundamente: eu achei por 3 minutos que tinha sido abandonado.<br>
+terceiramente: eu dramatizei desnecessariamente.<br><br>
+mas agora estou aqui, entregando flores digitais porque sou evoluído.
+</div>
+
+<div class="message">
+inclusive, investigação importante:<br>
+como você pintou a unha dessa vez?<br>
+qual foi a cor? qual foi o conceito? teve inspiração artística?<br>
+foi minimalista? foi misteriosa? foi "vou desestabilizar alguém hoje"?<br><br>
+preciso de respostas.
+</div>
+
+<div class="quiz">
+<div class="message">
+mini quiz extremamente difícil:<br><br>
+quem tem a unha mais linda?
+</div>
+
+<button onclick="resposta()">a) júlia</button>
+<button onclick="resposta()">b) julinha</button>
+
+<div class="hidden" id="resultado">
+<div class="message" style="margin-top:20px;">
+resposta correta: ambas.<br>
+porque claramente estamos falando da mesma entidade suprema das unhas perfeitas.
+</div>
+</div>
+
+</div>
+
+<div class="message" style="margin-top:40px;">
+conclusão final:<br>
+se eu pareci dramático, foi apenas efeito colateral da sua ausência.<br><br>
+aguardando notícias da cor da unha e talvez uma ligação inesperada.<br>
+sem pressão.<br>
+apenas expectativa cinematográfica.
+</div>
+
+</div>
+
+<div class="footer">
+romcom productions apresenta: o homem que entregava buquês virtuais.
+</div>
+
+</div>
+
+<script>
+function abrir(){
+document.getElementById("conteudo").style.display="block";
+}
+
+function resposta(){
+document.getElementById("resultado").style.display="block";
+}
+</script>
+
+</body>
+</html>
