@@ -13,14 +13,15 @@ body {
     overflow-x: hidden;
 }
 
+/* fundo sofisticado vermelho */
 .background {
     position: fixed;
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 20% 30%, rgba(255,192,203,0.3), transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(173,216,230,0.3), transparent 40%),
-        radial-gradient(circle at 50% 90%, rgba(255,182,193,0.2), transparent 40%);
+        radial-gradient(circle at 20% 30%, rgba(255,0,0,0.25), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(200,0,0,0.25), transparent 40%),
+        radial-gradient(circle at 50% 90%, rgba(150,0,0,0.2), transparent 40%);
     animation: bgMove 12s infinite alternate ease-in-out;
     z-index: -1;
 }
@@ -30,6 +31,7 @@ body {
     100% { transform: scale(1.1); }
 }
 
+/* pétalas */
 .petal {
     position: absolute;
     font-size: 18px;
@@ -51,28 +53,29 @@ body {
 h1 {
     font-size: 32px;
     font-weight: 600;
-    color: #333;
+    color: #8B0000;
 }
 
 p {
     font-size: 18px;
-    color: #555;
+    color: #5a0000;
     max-width: 600px;
     margin: 20px auto;
 }
 
+/* botão rgb puxado pro vermelho */
 .rgb-btn {
     padding: 14px 30px;
     font-size: 16px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(45deg, #ff0000, #cc0000, #990000, #ff1a1a);
     background-size: 400%;
     color: white;
     font-weight: 600;
     animation: rgb 6s linear infinite;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(255,0,0,0.3);
     transition: 0.3s;
 }
 
@@ -97,6 +100,7 @@ p {
     font-weight: 600;
     margin-top: 15px;
     font-size: 18px;
+    color: #8B0000;
 }
 </style>
 </head>
@@ -105,9 +109,9 @@ p {
 
 <div class="background"></div>
 
-<div class="petal" style="top:20%; left:15%;">🌸</div>
-<div class="petal" style="top:60%; left:75%;">🌹</div>
-<div class="petal" style="top:40%; left:50%;">💮</div>
+<div class="petal" style="top:20%; left:15%;">🌹</div>
+<div class="petal" style="top:60%; left:75%;">🌺</div>
+<div class="petal" style="top:40%; left:50%;">🌸</div>
 
 <div class="container">
 
@@ -120,7 +124,7 @@ ou se você só tava ocupada sendo absolutamente linda com a unha pintada mister
 
 <p>
 inclusive: como você pintou dessa vez?  
-curta? longa? temática? conceito artístico europeu?
+curta? longa? conceito artístico revolucionário?
 </p>
 
 <button class="rgb-btn" onclick="mostrarMensagem()">receber buquê</button>
@@ -141,16 +145,9 @@ curta? longa? temática? conceito artístico europeu?
     <div id="resultado" class="result"></div>
 </div>
 
-<audio id="musica">
-    <source src="https://www.youtube.com/embed/TZip_br_v3w?autoplay=1" type="audio/mp3">
-</audio>
-
-</div>
-
 <script>
 function mostrarMensagem() {
     document.getElementById("mensagem").classList.remove("hidden");
-    document.getElementById("musica").play();
 }
 
 function resposta() {
