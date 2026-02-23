@@ -19,7 +19,6 @@ padding:60px 20px;
 position:relative;
 }
 
-/* glow suave */
 body::before{
 content:"";
 position:absolute;
@@ -87,6 +86,27 @@ color:#444;
 .buque{
 font-size:60px;
 margin-bottom:30px;
+display:inline-block;
+animation:flutuar 4s ease-in-out infinite;
+transform-origin:center bottom;
+}
+
+@keyframes flutuar{
+0%{
+transform:translateY(0px) rotate(-2deg);
+}
+25%{
+transform:translateY(-12px) rotate(2deg);
+}
+50%{
+transform:translateY(0px) rotate(-1deg);
+}
+75%{
+transform:translateY(-8px) rotate(1deg);
+}
+100%{
+transform:translateY(0px) rotate(-2deg);
+}
 }
 
 .romcom-btn{
@@ -141,7 +161,7 @@ to{opacity:1;transform:translateY(0);}
 
 <div class="container">
 
-<h1>entrega oficial de buquê 💐</h1>
+<h1>entrega oficial de buquê</h1>
 
 <div class="subtitle">
 uma comédia romântica leve sobre saudade, drama imaginário e unhas perigosamente bonitas.
@@ -160,14 +180,14 @@ foi cinematográfico? absolutamente.
 </div>
 
 <div class="message">
-inclusive preciso saber:<br>
-como você pintou a unha dessa vez?<br>
-qual foi a cor? qual foi o conceito?<br>
-isso foi tendência internacional ou estratégia para me desestabilizar?
+inclusive preciso saber<br>
+como você pintou a unha?<br>
+azulllllll???????????<br>
+tendência internacional ou estratégia para me desestabilizar?
 </div>
 
 <div class="message">
-mini quiz romântico:
+isso nao da pra errar
 </div>
 
 <div class="quiz-options">
@@ -177,14 +197,14 @@ mini quiz romântico:
 
 <div class="result" id="resultado">
 resposta correta: ambas.<br>
-porque estamos falando da mesma pessoa extraordinária.
+porque estamos falando da mesma maravilha...
 </div>
 
 <div class="message" style="margin-top:45px;">
 conclusão final:<br>
-sinto sua falta em níveis cinematográficos.<br>
+sou maluco por ficar 1,50h ao total fazendo 3 sites.<br>
 gostei da sua voz mais do que deveria admitir.<br>
-e ainda sonho com uma ligação inesperada como se fosse cena final de filme.
+e ainda sonho com uma ligação inesperada como se fosse cena final de filmekkkkkkkkk
 </div>
 
 </div>
@@ -201,7 +221,7 @@ allowfullscreen>
 </div>
 
 <div class="footer">
-produzido por alguém emocionalmente afetado, porém elegante.
+produzido por alguém bem doido
 </div>
 
 <script>
