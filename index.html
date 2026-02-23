@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>entrega oficial</title>
+<title>entrega oficial de buquê</title>
 
-<link href="https://fonts.googleapis.com/css2?family=inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=playfair+display:wght@600&family=inter:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-background:#f9f9fb;
+background:linear-gradient(135deg,#fff6f8,#fdfdfd);
 font-family:'inter',sans-serif;
-color:#1a1a1a;
+color:#2b2b2b;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -23,80 +23,83 @@ min-height:100vh;
 .container{
 width:100%;
 max-width:820px;
-padding:80px 50px;
+padding:90px 60px;
 background:#ffffff;
-border-radius:18px;
-box-shadow:0 20px 60px rgba(0,0,0,0.06);
+border-radius:24px;
+box-shadow:0 30px 80px rgba(0,0,0,0.06);
 text-align:center;
 }
 
 h1{
-font-size:2.4rem;
+font-family:'playfair display',serif;
+font-size:2.8rem;
 margin-bottom:20px;
-font-weight:700;
+color:#1e1e1e;
 }
 
 .subtitle{
-color:#666;
+color:#7a7a7a;
 margin-bottom:50px;
 line-height:1.6;
 font-size:1.05rem;
 }
 
 .section{
-margin-top:40px;
+margin-top:50px;
 display:none;
 animation:fade 0.8s ease forwards;
 }
 
 .message{
-line-height:1.8;
-margin-bottom:28px;
+line-height:1.9;
+margin-bottom:32px;
 font-size:1.05rem;
-color:#333;
+color:#444;
 }
 
 .buque{
-font-size:55px;
-margin-bottom:25px;
+font-size:60px;
+margin-bottom:30px;
 }
 
-.rgb-btn{
-padding:14px 36px;
+.romcom-btn{
+padding:14px 38px;
 border-radius:50px;
 border:none;
 cursor:pointer;
 font-size:0.95rem;
 font-weight:600;
 color:#fff;
-background:linear-gradient(270deg, red, blue, green, red);
-background-size:600% 600%;
-animation:rgbMove 8s ease infinite;
-transition:0.3s;
+background:linear-gradient(135deg,#ff7eb3,#ff758c);
+transition:0.3s ease;
 margin:10px;
+box-shadow:0 10px 25px rgba(255,118,140,0.25);
 }
 
-.rgb-btn:hover{
+.romcom-btn:hover{
 transform:translateY(-2px);
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+box-shadow:0 15px 35px rgba(255,118,140,0.35);
+}
+
+.quiz-options{
+margin-top:15px;
 }
 
 .result{
 margin-top:25px;
 display:none;
-color:#444;
+color:#555;
+font-weight:500;
+}
+
+.music-player{
+display:none;
 }
 
 .footer{
-margin-top:70px;
+margin-top:80px;
 font-size:0.8rem;
-color:#aaa;
-}
-
-@keyframes rgbMove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+color:#c2c2c2;
 }
 
 @keyframes fade{
@@ -110,57 +113,66 @@ to{opacity:1;transform:translateY(0);}
 
 <div class="container">
 
-<h1>entrega oficial de buquê</h1>
+<h1>entrega oficial de buquê 💐</h1>
 
 <div class="subtitle">
-uma apresentação profissional sobre saudade, possível abandono imaginário e investigação estética sobre unhas.
+uma comédia romântica leve sobre saudade, drama imaginário e unhas perigosamente bonitas.
 </div>
 
-<button class="rgb-btn" onclick="abrir()">aceitar buquê virtual</button>
+<button class="romcom-btn" onclick="abrir()">aceitar flores virtuais</button>
 
 <div class="section" id="conteudo">
 
 <div class="buque">💐</div>
 
 <div class="message">
-relatório breve:<br><br>
-por aproximadamente 4 minutos eu considerei a hipótese de ter sido abandonado.<br>
-foi dramático? sim.<br>
-foi necessário? também.
+confesso que por alguns minutos eu achei que tinha sido abandonado.<br>
+foi dramático? completamente.<br>
+foi cinematográfico? absolutamente.
 </div>
 
 <div class="message">
-gostaria de registrar oficialmente minhas saudades.<br>
-e aproveitar para abrir uma investigação importante:<br><br>
-como exatamente você pintou a unha dessa vez?<br>
-qual foi a cor?<br>
-qual foi o conceito criativo?<br>
-isso foi planejado ou simplesmente você acordou decidida a desestabilizar alguém?
+inclusive preciso saber:<br>
+como você pintou a unha dessa vez?<br>
+qual foi a cor? qual foi o conceito?<br>
+isso foi tendência internacional ou estratégia para me desestabilizar?
 </div>
 
 <div class="message">
-mini quiz corporativo:
+mini quiz romântico:
 </div>
 
-<button class="rgb-btn" onclick="responder()">quem tem a unha mais linda? a) júlia</button>
-<button class="rgb-btn" onclick="responder()">quem tem a unha mais linda? b) julinha</button>
+<div class="quiz-options">
+<button class="romcom-btn" onclick="responder()">a) júlia</button>
+<button class="romcom-btn" onclick="responder()">b) julinha</button>
+</div>
 
 <div class="result" id="resultado">
 resposta correta: ambas.<br>
-porque claramente estamos falando da mesma referência internacional em estética de unhas.
+porque estamos falando da mesma pessoa extraordinária.
 </div>
 
-<div class="message" style="margin-top:40px;">
-conclusão executiva:<br>
-sinto sua falta.<br>
-gostei da sua voz em um nível desnecessário.<br>
-e ainda aguardo uma ligação inesperada como se fosse cena final de comédia romântica.
+<div class="message" style="margin-top:45px;">
+conclusão final:<br>
+sinto sua falta em níveis cinematográficos.<br>
+gostei da sua voz mais do que deveria admitir.<br>
+e ainda sonho com uma ligação inesperada como se fosse cena final de filme.
 </div>
 
+</div>
+
+<!-- player escondido -->
+<div class="music-player" id="player">
+<iframe id="ytplayer" width="0" height="0"
+src=""
+frameborder="0"
+allow="autoplay; encrypted-media"
+allowfullscreen>
+</iframe>
 </div>
 
 <div class="footer">
-romcom labs © departamento de emoções exageradas
+produzido por alguém emocionalmente afetado, porém elegante.
 </div>
 
 </div>
@@ -168,6 +180,10 @@ romcom labs © departamento de emoções exageradas
 <script>
 function abrir(){
 document.getElementById("conteudo").style.display="block";
+
+// ativa música automaticamente
+document.getElementById("ytplayer").src =
+"https://www.youtube.com/embed/TZip_br_v3w?autoplay=1";
 }
 
 function responder(){
